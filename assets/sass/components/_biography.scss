@@ -1,0 +1,47 @@
+.bg-color {
+    background: url(../../../assets/img/navbar-bg.png) no-repeat;
+    background-size: cover;
+
+    .img-wrapper{
+        background: url(../../../assets/img/profile.png) no-repeat;
+        height: 100%;
+        background-size: auto;
+    }
+}
+
+.biography {
+    .content-wrapper {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 22px;
+        }
+
+        a {
+            height: 37px;
+            width: 195px;
+            font-size: 12px;
+            margin-bottom: 10px;
+            background-color: #f1a71a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+                rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 30px;
+            
+            &:active{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            }
+        }
+    }
+
+}
