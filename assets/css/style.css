@@ -119,10 +119,6 @@ li {
   opacity: 0.7;
 }
 
-.navbar-menu nav .container .navbar-nav {
-  height: 100%;
-}
-
 .navbar-menu nav .container .navbar-nav li {
   height: 100%;
   border-right: 1px solid #3e3e3e;
@@ -273,6 +269,10 @@ li {
   color: white;
 }
 
+.main .left-wrapper .newsletter .text span {
+  font-size: 14px;
+}
+
 .main .left-wrapper .newsletter form {
   background-color: #f3f1f1;
   padding: 10px;
@@ -399,22 +399,6 @@ li {
   border: none;
 }
 
-.main .right-wrapper .kocak-tv .nav-pills .nav-link.active {
-  background-color: white !important;
-  color: purple;
-  border-bottom: 1px solid purple;
-  border-radius: -100px;
-}
-
-.main .right-wrapper .kocak-tv .nav-pills .nav-link {
-  border-radius: 0;
-}
-
-.main .right-wrapper .kocak-tv button {
-  color: black;
-  font-weight: 600;
-}
-
 .main .right-wrapper .kocak-tv .row {
   display: flex;
   justify-content: space-between;
@@ -423,8 +407,28 @@ li {
 
 .main .right-wrapper .kocak-tv .row .text span {
   background-color: purple;
-  padding: 10px;
+  padding: 5px;
   color: white;
+  font-size: 14px;
+}
+
+.main .right-wrapper .kocak-tv .row .nav-pills .nav-link.active {
+  background: none !important;
+  color: purple;
+  border-bottom: 1px solid purple;
+  border-radius: -100px;
+}
+
+.main .right-wrapper .kocak-tv .row .nav-pills .nav-link {
+  border-radius: 0;
+  display: flex;
+  font-size: 14px;
+  padding: 10px !important;
+}
+
+.main .right-wrapper .kocak-tv .row button {
+  color: black;
+  font-weight: 600;
 }
 
 .main .right-wrapper .kocak-tv .row .video-wrapper .text h6 {
@@ -445,6 +449,10 @@ li {
   color: white;
   font-size: 14px;
   font-weight: 600;
+}
+
+.main .right-wrapper .kocak-tv .back-to-top i {
+  color: #f1a71a;
 }
 
 .main .right-wrapper .blog .blog-wrapper {
@@ -502,6 +510,24 @@ li {
 
 .main .right-wrapper .our-website .website-wrapper .visit p {
   color: white;
+}
+
+/* MEDİA QUERİES */
+@media (max-width: 1200px) {
+  .left-wrapper .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .left-wrapper .logo img {
+    width: 250px !important;
+  }
+  .siderbar {
+    order: 2;
+  }
+  .nav-pills .nav-link {
+    display: flex;
+    font-size: 12px !important;
+  }
 }
 
 .footer {

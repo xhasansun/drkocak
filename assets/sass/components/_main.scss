@@ -194,21 +194,7 @@
         }
         /* KOCAK TV */
         .kocak-tv {
-            .nav-pills .nav-link.active{
-                background-color: white !important;
-                color: purple;
-                border-bottom: 1px solid purple;
-                border-radius: -100px;
-            }
 
-            .nav-pills .nav-link{
-                border-radius: 0;
-            }
-
-            button{
-                color: black;
-                font-weight: 600;
-            }
             .row {
                 display: flex;
                 justify-content: space-between;
@@ -217,9 +203,30 @@
                 .text {
                     span {
                         background-color: purple;
-                        padding: 10px;
+                        padding: 5px;
                         color: white;
+                        font-size: 14px;
                     }
+                }
+
+                .nav-pills .nav-link.active{
+                    background: none !important;
+                    color: purple;
+                    border-bottom: 1px solid purple;
+                    border-radius: -100px;
+    
+                }
+    
+                .nav-pills .nav-link{
+                    border-radius: 0;
+                    display: flex;
+                    font-size: 14px;
+                    padding: 10px !important;
+                }
+    
+                button{
+                    color: black;
+                    font-weight: 600;
                 }
 
                 .video-wrapper {
@@ -245,6 +252,12 @@
                         font-size: 14px;
                         font-weight: 600;
                     }
+                }
+            }
+
+            .back-to-top{
+                i{
+                    color: #f1a71a;
                 }
             }
         }
@@ -314,3 +327,27 @@
         }
     }
 }
+
+
+/* MEDİA QUERİES */
+
+@media (max-width: 1200px) { 
+    .left-wrapper{
+        .logo{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 250px !important;
+            }
+        }
+    }
+
+    .siderbar{
+        order: 2;
+    }
+
+    .nav-pills .nav-link{
+        display: flex;
+        font-size: 12px !important;
+    }
+ }
